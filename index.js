@@ -2,6 +2,8 @@ import { Header, Nav, Main, Footer } from "./components";
 import * as store from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
+import dotenv from "dotenv";
+dotenv.config();
 const router = new Navigo("/");
 
 function render(state = store.Home) {
